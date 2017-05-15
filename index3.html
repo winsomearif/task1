@@ -3,7 +3,17 @@
 <title>MY WALL</title>
 <link rel="stylesheet" type="text/css" href="extstylesheet.css"/>
 <style type="text/css">
-body {background-color:brown;}
+@keyframes example{
+  0% {background-color:brown;}
+  25% {background-color:pink;}
+  50% {background-color:red;}
+  75% {background-color:orange;}
+  100% {background-color:yellow;}
+}
+body {background-color:brown;
+     animation-name: example;
+     animation-duration:4s;
+	 animation-iteration-count:infinite;}	
 h1 {text-align:center;}
 #div1 {  position:absolute;
 	   top:120px;
