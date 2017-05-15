@@ -3,10 +3,20 @@
 <title>MY WALL</title>
 <link rel="stylesheet" type="text/css" href="extstylesheet.css"/>
 <style type="text/css">
+@keyframes mymove1
+	{ from{top:0px;}
+		to{top:180px;}
+	}
+@keyframes mymove2
+	{ from{left:0px;}
+		to{left:150px;}
+	}	
 #div1 {
 	   position:absolute;
 	   top:130px;
 	   left:150px;
+	   animation-timing-function:ease;
+	   animation:mymove2 3s 1;
 	   }
 #div2 {border:2px dashed orange;
 	   background-image:url(backgrounintro2.jpg);
@@ -14,6 +24,8 @@
        top:180px;
        left:550px;
 	   color:red;
+	 animation-timing-function:ease;
+	   animation:mymove1 3s 1;
        }	
 #div3 {text-align:center;
 	   color:orange;
