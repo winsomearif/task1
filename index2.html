@@ -4,33 +4,65 @@
 <link rel="stylesheet" type="text/css" href="extstylesheet.css"/>
 <style type="text/css">
 body {background-color:purple;}
+@keyframes mymove1
+	{from{right:0px;}
+		to{right:300px;}
+	}
+@keyframes mymove2
+	{from{right:0px;}
+		to{right:450px;}
+	}
+@keyframes mymove3
+	{from{right:0px;}
+		to{right:300px;}
+	}
+@keyframes mymove4
+	{from{transform:rotateY(0deg);}
+		to{transform:rotateY(360deg);}
+	}
+	
 #div1 {border:2px solid black;
 	   position:absolute;
 	   top:105px;
-	   left:150px;}
+	   left:150px;
+	   animation-name:mymove4;
+	   animation-duration:4s;
+	   animation-iteration-count:infinite;}
 #div2 {border:2px solid black;
 	   position:absolute;
 	   top:310px;
-	   left:150px;}
+	   left:150px;
+	    animation-name:mymove4;
+	   animation-duration:4s;
+	   animation-iteration-count:infinite;}
 #div3 {border:2px solid black;
 	   position:absolute;
 	   top:515px;
-	   left:150px;}
+	   left:150px;
+	    animation-name:mymove4;
+	   animation-duration:4s;
+	   animation-iteration-count:infinite;}
 #div4 {position:absolute;
 	   top:45px;
 	   left:450px;
 	   color:pink;
-	   text-shadow:2px 2px 4px #000000;}	   
+	   text-shadow:2px 2px 4px #000000;
+	    animation-timing-function:ease;
+	    animation:mymove1 2s 1;}	   
 #div5 {position:absolute;
 	   top:250px;
 	   left:445px;
 	   color:pink;
-	   text-shadow:2px 2px 4px #000000;}	
+	   text-shadow:2px 2px 4px #000000;
+	     animation-timing-function:ease;
+	    animation:mymove2 2s 1;}	
 #div6 {position:absolute;
 	   top:450px;
 	   left:450px;
 	   color:pink;
-	   text-shadow:2px 2px 4px #000000;}	
+	   text-shadow:2px 2px 4px #000000;
+	 animation-timing-function:ease;
+	    animation:mymove3 2s 1;}	
 #div7 {position:absolute;
 	   top:105px;
 	   left:350px;
