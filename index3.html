@@ -5,19 +5,30 @@
 <style type="text/css">
 @keyframes example{
   0% {background-color:brown;}
-  25% {background-color:pink;}
   50% {background-color:red;}
-  75% {background-color:orange;}
-  100% {background-color:yellow;}
+  100% {background-color:orange;}
 }
 body {background-color:brown;
      animation-name: example;
      animation-duration:4s;
 	 animation-iteration-count:infinite;}	
 h1 {text-align:center;}
+@keyframes mymove1
+{	
+	from{left:0px;}
+	to{left:480px;}
+}
+@keyframes mymove2
+{	
+	from{right:0px;}
+	to{right:480px;}
+}		
+		
 #div1 {  position:absolute;
 	   top:120px;
 	   left:480px;
+	   animation-timing-function:ease-in-out;
+	   animation:mymove1 5s 1;
 	 }      
 #div2 {  position:absolute;
 	   top:300px;
@@ -26,6 +37,8 @@ h1 {text-align:center;}
 #div3 {  position:absolute;
 	   top:380px;
 	   left:480px;
+	   animation-timing-function:ease-in-out;
+	   animation:mymove2 5s 1;
 	 }  	 
 </style>
 </head>
