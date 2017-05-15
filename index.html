@@ -10,6 +10,10 @@
 @keyframes mymove2
 	{ from{left:0px;}
 		to{left:150px;}
+	}
+@keyframes mymove3
+	{ from{transform:rotateY(0deg);}
+		to{transform:rotateY(360deg);}
 	}	
 #div1 {
 	   position:absolute;
@@ -17,6 +21,10 @@
 	   left:150px;
 	   animation-timing-function:ease;
 	   animation:mymove2 3s 1;
+	   animation-delay:3s;
+	   animation-name:mymove3;
+	   animation-duration:4s;
+	   animation-iteration-count:infinite;
 	   }
 #div2 {border:2px dashed orange;
 	   background-image:url(backgrounintro2.jpg);
