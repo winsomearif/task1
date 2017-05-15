@@ -8,3 +8,5 @@ a:active{background-color:orange;}
 table {border:3px solid black;}
 tr {background-color:yellow;}
 td {border:2px dashed red;}
+body {background-repeat:no-repeat;
+      background-size:cover;}
